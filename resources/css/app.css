@@ -1,0 +1,607 @@
+
+
+/* =====================================================
+   HOTELKU ADMIN v2 - TRAVELOKA STYLE
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Segoe UI,Tahoma,sans-serif;
+
+    background:#f5f7fb;
+
+    color:#333;
+
+}
+
+/* ===========================
+        SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:#fff;
+
+    border-right:1px solid #e9ecef;
+
+    display:flex;
+
+    flex-direction:column;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:25px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.logo-icon{
+
+    width:55px;
+
+    height:55px;
+
+    background:#0ea5e9;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.logo h2{
+
+    font-size:22px;
+
+    margin:0;
+
+    color:#0ea5e9;
+
+    font-weight:700;
+
+}
+
+.logo small{
+
+    color:#888;
+
+}
+
+.menu-title{
+
+    padding:20px 25px 10px;
+
+    font-size:12px;
+
+    color:#999;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+    color:#666;
+
+    padding:15px 25px;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.sidebar a i{
+
+    font-size:20px;
+
+}
+
+.sidebar a:hover{
+
+    background:#eef8ff;
+
+    color:#0ea5e9;
+
+}
+
+.sidebar a.active{
+
+    background:#0ea5e9;
+
+    color:white;
+
+    border-radius:12px;
+
+    margin:0 12px;
+
+}
+
+.sidebar-bottom{
+
+    margin-top:auto;
+
+    padding:20px;
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+        MAIN
+=========================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+        TOPBAR
+=========================== */
+
+.topbar{
+
+    height:85px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.topbar h3{
+
+    font-size:26px;
+
+    margin-bottom:4px;
+
+}
+
+.topbar small{
+
+    color:#888;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+/* ===========================
+        SEARCH
+=========================== */
+
+.search-box{
+
+    width:340px;
+
+    background:#f5f7fb;
+
+    border-radius:40px;
+
+    padding:12px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    background:transparent;
+
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+}
+
+/* ===========================
+        ICON BUTTON
+=========================== */
+
+.icon-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    background:#eef8ff;
+
+    color:#0ea5e9;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.icon-btn:hover{
+
+    background:#0ea5e9;
+
+    color:white;
+
+}
+
+/* ===========================
+        PROFILE
+=========================== */
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.profile img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+}
+
+.profile strong{
+
+    display:block;
+
+}
+
+.profile small{
+
+    color:#888;
+
+}
+
+/* ===========================
+        PAGE
+=========================== */
+
+.page-content{
+
+    padding:30px;
+
+}
+
+/* ===========================
+        CARD
+=========================== */
+
+.card-dashboard{
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.card-dashboard:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.card-number{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+}
+
+.card-title{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.card-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.bg-blue{
+
+    background:#0ea5e9;
+
+}
+
+.bg-green{
+
+    background:#10b981;
+
+}
+
+.bg-orange{
+
+    background:#f59e0b;
+
+}
+
+.bg-red{
+
+    background:#ef4444;
+
+}
+
+/* ===========================
+        TABLE
+=========================== */
+
+.table-modern{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.table-modern table{
+
+    margin:0;
+
+}
+
+.table-modern thead{
+
+    background:#0ea5e9;
+
+    color:white;
+
+}
+
+.table-modern td{
+
+    vertical-align:middle;
+
+}
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.btn-primary{
+
+    background:#0ea5e9;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+.btn-primary:hover{
+
+    background:#0284c7;
+
+}
+
+/* ===========================
+        FORM
+=========================== */
+
+.form-control{
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+}
+
+.form-select{
+
+    border-radius:12px;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:90px;
+
+}
+
+.logo div{
+
+    display:none;
+
+}
+
+.sidebar a{
+
+    justify-content:center;
+
+}
+
+.sidebar a span{
+
+    display:none;
+
+}
+
+.main-content{
+
+    margin-left:90px;
+
+}
+
+.search-box{
+
+    display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+.topbar-right{
+
+    margin-top:15px;
+
+}
+
+.page-content{
+
+    padding:15px;
+
+}
+
+}
